@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 68vh;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-section {
+    flex: 1;
+    background-image: url("https://i.natgeofe.com/n/82441843-dd7e-4c74-87ec-c1b206dfed3a/01-pacific-ocean-reference_4x3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+input[type="email"] {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.next-button {
+    background-color: #006d92;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.next-button::after {
+    content: "→";
+    margin-left: 5px;
+}
+
+.forgot-password {
+    color: #006d92;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-button {
+    background-color: #fff;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #a5a5a5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.google {
+    color: #4285f4;
+}
+
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #006d92;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
